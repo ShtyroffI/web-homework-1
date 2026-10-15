@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRAVIS SCOTT — LA FLAME</title>
+    <!-- Шрифты: акцентный Syne, базовый Inter и моноширинный JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Syne:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body id="top">
+    <!-- ═══════════════ NAV ═══════════════ -->
+    <nav class="nav" aria-label="Основная навигация">
+      <div class="nav__inner">
+        <a href="#top" class="nav__brand">LA FLAME // ARCHIVE</a>
+        <div class="nav__links">
+          <a href="#bio" class="nav__link">01. Биография</a>
+          <a href="#discography" class="nav__link">02. Дискография</a>
+          <a href="#facts" class="nav__link">03. Архив</a>
+          <a href="#gallery" class="nav__link">04. Кадры</a>
+        </div>
+        <button id="theme" class="btn btn--outline" type="button">
+          Светлая тема
+        </button>
+      </div>
+    </nav>
+
+    <!-- ═══════════════ HERO ═══════════════ -->
+    <header class="hero">
+      <div class="hero__bg"></div>
+      <div class="hero__content">
+        <div class="hero__meta">
+          <span>HOUSTON, TX</span>
+          <span>1991 — PRESENT</span>
+          <span>LA FLAME</span>
+        </div>
+        <h1 class="hero__title">TRAVIS<br />SCOTT</h1>
+        <div class="hero__bottom">
+          <p class="hero__subtitle">
+            Американский рэпер, продюсер и визионер современной поп-культуры.
+            Создатель звуковых миров RODEO, ASTROWORLD и UTOPIA.
+          </p>
+          <a href="#discography" class="btn">К релизам ↓</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ═══════════════ BIO ═══════════════ -->
+      <section id="bio" class="section">
+        <div class="section__header">
+          <span class="section__index">[01 // BIOGRAPHY]</span>
+          <h2 class="section__title">Досье и путь</h2>
+        </div>
+
+        <div class="bio">
+          <div class="bio__media">
+            <img
+              src="./images/travis-portrait.jpg"
+              alt="Портрет Travis Scott"
+              class="bio__photo"
+            />
+            <div class="bio__caption">
+              <span>JACQUES BERMON WEBSTER II</span>
+              <span>LA FLAME</span>
+            </div>
+          </div>
+
+          <div class="bio__text">
+            <p class="bio__lead">
+              <strong>Жак Бермон Вебстер&nbsp;II</strong> (род.&nbsp;30&nbsp;апреля
+              1991), известный как <em>Travis Scott</em>, — американский артист,
+              автор песен и саунд-продюсер из Хьюстона, штат Техас.
+            </p>
+            <p>
+              Свою карьеру он начал с андеграундных микстейпов и публикаций на
+              SoundCloud, после чего привлёк внимание Канье Уэста и T.I.,
+              подписав контракты с Epic Records, Grand Hustle и GOOD Music в
+              качестве штатного продюсера. В 2017 году основал собственный
+              креативный лейбл и объединение <strong>Cactus Jack Records</strong>.
+            </p>
+            <p>
+              Трэвис сформировал узнаваемый психоделический трэп-саунд с
+              перегруженным басом, автотюном и сменами ритма внутри одного трека,
+              а его коллаборации с Nike, Jordan Brand и A24 вышли далеко за рамки
+              музыкальной индустрии.
+            </p>
+
+            <div id="bio-extra" class="bio__extra hidden">
+              <p>
+                В раннем детстве Жак жил с бабушкой в южном Хьюстоне, а позже
+                переехал к родителям в пригород Миссури-Сити. С трёх лет он
+                осваивал ударную установку, затем пианино и в старшей школе
+                начал собирать первые биты. Поступив в Техасский университет в
+                Сан-Антонио, на втором курсе он бросил учёбу ради музыки — спал на
+                диванах друзей в Нью-Йорке и Лос-Анджелесе, пока его дебютный
+                микстейп <em>Owl Pharaoh</em> не открыл ему дорогу на большую
+                сцену.
+              </p>
+            </div>
+
+            <button id="bio-toggle" class="btn btn--secondary" type="button">
+              Читать полностью +
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════ DISCOGRAPHY ═══════════════ -->
+      <section id="discography" class="section section--alt">
+        <div class="section__inner">
+          <div class="section__header">
+            <span class="section__index">[02 // DISCOGRAPHY]</span>
+            <h2 class="section__title">Ключевые альбомы</h2>
+            <p class="section__desc">
+              Нажмите на карточку релиза, чтобы раскрыть архивную справку
+            </p>
+          </div>
+
+          <div class="cards">
+            <!-- Card 1 -->
+            <article class="card" data-album="rodeo" tabindex="0">
+              <div class="card__image-wrap">
+                <img
+                  src="./images/rodeo.jpg"
+                  alt="Обложка альбома Rodeo"
+                  class="card__cover"
+                />
+                <span class="card__badge">LP // 01</span>
+              </div>
+              <div class="card__body">
+                <div class="card__top">
+                  <h3 class="card__name">Rodeo</h3>
+                  <span class="card__year">2015</span>
+                </div>
+                <span class="card__hint">Подробнее +</span>
+                <div class="card__info hidden">
+                  <p>
+                    Дебютный студийный альбом. Включает мультиплатиновый хит
+                    «Antidote», «90210» и «3500» при участии Future и 2&nbsp;Chainz.
+                    Дебютировал на 3-й строчке чарта Billboard 200.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="card" data-album="birds" tabindex="0">
+              <div class="card__image-wrap">
+                <img
+                  src="./images/birds.jpg"
+                  alt="Обложка альбома Birds in the Trap Sing McKnight"
+                  class="card__cover"
+                />
+                <span class="card__badge">LP // 02</span>
+              </div>
+              <div class="card__body">
+                <div class="card__top">
+                  <h3 class="card__name">Birds in the Trap Sing McKnight</h3>
+                  <span class="card__year">2016</span>
+                </div>
+                <span class="card__hint">Подробнее +</span>
+                <div class="card__info hidden">
+                  <p>
+                    Второй студийный альбом и первое 1-е место Трэвиса в
+                    Billboard 200. Главные бэнгеры: «goosebumps»
+                    (feat.&nbsp;Kendrick Lamar) и «pick up the phone».
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="card" data-album="astroworld" tabindex="0">
+              <div class="card__image-wrap">
+                <img
+                  src="./images/astroworld.jpg"
+                  alt="Обложка альбома ASTROWORLD"
+                  class="card__cover"
+                />
+                <span class="card__badge">LP // 03</span>
+              </div>
+              <div class="card__body">
+                <div class="card__top">
+                  <h3 class="card__name">ASTROWORLD</h3>
+                  <span class="card__year">2018</span>
+                </div>
+                <span class="card__hint">Подробнее +</span>
+                <div class="card__info hidden">
+                  <p>
+                    Культовый релиз, названный в честь снесённого парка
+                    аттракционов в Хьюстоне. Подарил индустрии гимн «SICKO MODE»
+                    (feat.&nbsp;Drake) и номинацию на «Грэмми».
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="card" data-album="utopia" tabindex="0">
+              <div class="card__image-wrap">
+                <img
+                  src="./images/utopia.jpg"
+                  alt="Обложка альбома UTOPIA"
+                  class="card__cover"
+                />
+                <span class="card__badge">LP // 04</span>
+              </div>
+              <div class="card__body">
+                <div class="card__top">
+                  <h3 class="card__name">UTOPIA</h3>
+                  <span class="card__year">2023</span>
+                </div>
+                <span class="card__hint">Подробнее +</span>
+                <div class="card__info hidden">
+                  <p>
+                    Масштабный четвёртый студийный альбом. Включает бэнгер «FE!N»
+                    (feat.&nbsp;Playboi Carti) и «MELTDOWN». 1-е место Billboard
+                    200 с результатом 496&nbsp;000 единиц за первую неделю.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════ FACTS ═══════════════ -->
+      <section id="facts" class="section">
+        <div class="section__header">
+          <span class="section__index">[03 // ARCHIVE NOTES]</span>
+          <h2 class="section__title">Факты и хроника</h2>
+        </div>
+
+        <div class="facts">
+          <div class="fact" id="fact-display">
+            <div class="fact__meta">
+              <span>ЗАПИСЬ АРХИВА</span>
+              <span class="fact__number">00 / 13</span>
+            </div>
+            <p class="fact__text">
+              Нажмите кнопку ниже, чтобы загрузить случайный факт из биографии и
+              студийной хроники артиста.
+            </p>
+          </div>
+          <button id="next-fact" class="btn" type="button">
+            Следующий факт ↻
+          </button>
+        </div>
+      </section>
+
+      <!-- ═══════════════ GALLERY ═══════════════ -->
+      <section id="gallery" class="section section--alt">
+        <div class="section__inner">
+          <div class="section__header section__header--row">
+            <div>
+              <span class="section__index">[04 // VISUALS]</span>
+              <h2 class="section__title">Визуальный ряд</h2>
+            </div>
+            <button id="gallery-scroll" class="btn btn--secondary" type="button">
+              Листать далее →
+            </button>
+          </div>
+
+          <div class="gallery">
+            <figure class="gallery__item">
+              <img
+                src="./images/gallery-1.jpg"
+                alt="Travis Scott во время живого выступления"
+                class="gallery__img"
+              />
+              <figcaption class="gallery__caption">01 // LIVE SHOW ENERGY</figcaption>
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="./images/gallery-2.jpg"
+                alt="Коллаборация Travis Scott и Nike"
+                class="gallery__img"
+              />
+              <figcaption class="gallery__caption">02 // CACTUS JACK × NIKE</figcaption>
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="./images/gallery-3.jpg"
+                alt="Фестиваль ASTROWORLD"
+                class="gallery__img"
+              />
+              <figcaption class="gallery__caption">03 // ASTROWORLD STAGE</figcaption>
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="./images/gallery-4.jpg"
+                alt="Эстетика Cactus Jack"
+                class="gallery__img"
+              />
+              <figcaption class="gallery__caption">04 // UTOPIA ERA</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════ LINKS ═══════════════ -->
+      <section class="section">
+        <div class="section__header">
+          <span class="section__index">[05 // EXTERNAL]</span>
+          <h2 class="section__title">Официальные ресурсы</h2>
+        </div>
+
+        <div class="links">
+          <a
+            href="https://www.travisscott.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link-card"
+          >
+            <span class="link-card__label">OFFICIAL STORE &amp; SITE</span>
+            <span class="link-card__title">travisscott.com ↗</span>
+          </a>
+          <a
+            href="https://open.spotify.com/artist/0Y5tJX1MQlPlqiwlOH1tJY"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link-card"
+          >
+            <span class="link-card__label">STREAMING</span>
+            <span class="link-card__title">Spotify Artist Profile ↗</span>
+          </a>
+          <a
+            href="https://www.instagram.com/travisscott/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link-card"
+          >
+            <span class="link-card__label">SOCIAL</span>
+            <span class="link-card__title">@flame Instagram ↗</span>
+          </a>
+          <a
+            href="https://en.wikipedia.org/wiki/Travis_Scott"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link-card"
+          >
+            <span class="link-card__label">ENCYCLOPEDIA</span>
+            <span class="link-card__title">Wikipedia Entry ↗</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- ═══════════════ FOOTER ═══════════════ -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <span>© 2026 LA FLAME</span>
+        <span>ВЕБ-РАЗРАБОТКА // ДЗ №1</span>
+      </div>
+    </footer>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
